@@ -55,8 +55,7 @@ def predict(url, appcode, img_base64, kv_config, old_format):
 
 # 主程序，输入文件，返回信息列表
 def demo(img_file):
-    # appcode = '3b2f65c5ff3c478baa2c5065e109ad8b'
-    appcode = '71b1b0b4c7b146ad877357e02e6158e6'
+    appcode = 'your_appcode'
     url = 'http://dm-51.data.aliyun.com/rest/160601/ocr/ocr_idcard.json'
     #如果输入带有inputs, 设置为True，否则设为False
     is_old_format = False
@@ -125,4 +124,5 @@ if __name__ == '__main__':
         while True:
             if ord(msvcrt.getch()) in [27]:
                 exit()
+
 
